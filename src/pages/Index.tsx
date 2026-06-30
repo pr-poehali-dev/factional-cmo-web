@@ -51,6 +51,7 @@ const experience = [
     period: '2026 — н.в.',
     role: 'CMO / Директор по маркетингу',
     company: 'АО «С+»',
+    url: 'https://softplus.systems/',
     points: [
       'Стратегический маркетинг и предсказуемый рост',
       'Внедрение AI и автоматизации в маркетинг',
@@ -61,6 +62,7 @@ const experience = [
     period: '2025 — 2026',
     role: 'CMO / Директор по маркетингу',
     company: 'Notamedia.Integrator',
+    url: 'https://integrator.nota.media/',
     points: [
       'Запуск и go-to-market новых продуктов B2B/B2G',
       'Построение системы сквозной аналитики',
@@ -71,6 +73,7 @@ const experience = [
     period: '2020 — 2025',
     role: 'CMO / Заместитель директора по развитию',
     company: 'АО «ФИНТЕХ»',
+    url: 'https://www.fintech.ru/',
     points: [
       'Data-driven трансформация маркетинговой функции',
       'Вывод финтех-продуктов на рынок',
@@ -81,6 +84,7 @@ const experience = [
     period: '2009 — 2020',
     role: 'CMO / Партнёр',
     company: 'Seven A Studio',
+    url: 'https://7astudio.ru/',
     points: [
       'Рост прибыли агентства на 360% за счёт перестройки воронки',
       'Ребрендинг и позиционирование «СинтезМ»',
@@ -195,9 +199,9 @@ const Index = () => {
 
           <div className="relative hidden lg:block animate-float-slow">
             <div className="absolute -inset-6 bg-primary/20 blur-3xl rounded-full" />
-            <div className="relative rounded-3xl overflow-hidden border border-border shadow-2xl">
-              <img src={PHOTO_HERO} alt="Амир Ахмадьяров" className="w-full h-[620px] object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent" />
+            <div className="relative rounded-3xl overflow-hidden border border-border shadow-2xl bg-card flex items-end justify-center" style={{ minHeight: '640px' }}>
+              <img src={PHOTO_HERO} alt="Амир Ахмадьяров" className="w-full h-full object-contain object-bottom max-h-[680px]" style={{ display: 'block' }} />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent pointer-events-none" />
             </div>
           </div>
         </div>
@@ -290,7 +294,10 @@ const Index = () => {
                 </div>
                 <div>
                   <h3 className="text-xl md:text-2xl font-bold mb-1">{e.role}</h3>
-                  <p className="text-muted-foreground mb-5">{e.company}</p>
+                  <a href={e.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-muted-foreground hover:text-primary transition-colors mb-5 group">
+                    {e.company}
+                    <Icon name="ExternalLink" size={13} className="opacity-50 group-hover:opacity-100 transition-opacity" />
+                  </a>
                   <ul className="grid sm:grid-cols-2 gap-3">
                     {e.points.map((p) => (
                       <li key={p} className="flex items-start gap-2.5 text-sm text-foreground/80">
