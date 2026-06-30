@@ -102,7 +102,7 @@ const skills = [
   { icon: 'Bot', title: 'AI & Automation', desc: 'Внедрение ИИ в маркетинг и операционные процессы.' },
   { icon: 'BarChart3', title: 'Data-driven рост', desc: 'Сквозная аналитика, атрибуция, управление на данных.' },
   { icon: 'Building2', title: 'B2B / B2G', desc: 'Сложные циклы сделок, тендеры, корпоративные продажи.' },
-  { icon: 'Users', title: 'Командостроительство', desc: 'Найм, мотивация и развитие маркетинговых команд.' },
+  { icon: 'Users', title: 'Управление командами', desc: 'Найм, мотивация и развитие маркетинговых команд.' },
   { icon: 'Rocket', title: 'Продуктовый вывод', desc: 'Go-to-market и масштабирование новых продуктов.' },
 ];
 
@@ -326,7 +326,7 @@ const Index = () => {
         <div className="max-w-[1600px] mx-auto px-5 md:px-10">
           <div className="reveal mb-16">
             <p className="font-mono-tech text-xs tracking-[0.3em] text-primary mb-4">// КОМПЕТЕНЦИИ</p>
-            <h2 className="text-3xl md:text-5xl font-bold tracking-tight max-w-3xl">Что я делаю — инженерный подход к росту</h2>
+            <h2 className="text-3xl md:text-5xl font-bold tracking-tight max-w-3xl">Мои компетенции — системный маркетинг для роста бизнеса</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {skills.map((s, i) => (
@@ -353,9 +353,81 @@ const Index = () => {
         <div className="relative max-w-4xl mx-auto px-5 md:px-10 text-center reveal">
           <Icon name="Quote" size={48} className="mx-auto text-primary/40 mb-8" />
           <blockquote className="text-2xl md:text-4xl font-bold leading-snug tracking-tight">
-            «Маркетинг как инженерная дисциплина,<br className="hidden md:block" /> а&nbsp;не как творчество.»
+            «Маркетинг, который приносит реальную прибыль,<br className="hidden md:block" /> а&nbsp;не только красивые отчёты.»
           </blockquote>
           <p className="mt-8 font-mono-tech text-sm tracking-[0.25em] text-muted-foreground">ПРИНЦИП БРЕНДА</p>
+        </div>
+      </section>
+
+      {/* Training */}
+      <section id="training" className="py-24 md:py-32 border-t border-border/50">
+        <div className="max-w-[1600px] mx-auto px-5 md:px-10 grid lg:grid-cols-2 gap-14 items-center">
+          <div className="reveal">
+            <p className="font-mono-tech text-xs tracking-[0.3em] text-primary mb-4">// АВТОРСКИЕ ПРОГРАММЫ И ТРЕНИНГИ</p>
+            <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-8">
+              Автор программы<br />«Digital Маркетинг 3.0»
+            </h2>
+
+            <div className="rounded-2xl border border-primary/30 bg-primary/5 p-7 mb-8">
+              <div className="flex items-center gap-3 mb-5">
+                <span className="flex size-11 items-center justify-center rounded-xl bg-primary text-primary-foreground">
+                  <Icon name="GraduationCap" size={22} />
+                </span>
+                <div>
+                  <p className="font-semibold text-lg">Digital Маркетинг 3.0</p>
+                  <p className="text-sm text-muted-foreground font-mono-tech">АВТОРСКАЯ ПРОГРАММА</p>
+                </div>
+              </div>
+              <ul className="space-y-3">
+                {[
+                  'Полноценная авторская программа по стратегическому маркетингу для руководителей и собственников',
+                  'Сочетание глубокого стратегического мышления, data-driven инструментов и практического внедрения',
+                  'Фокус на построении систем, которые реально увеличивают прибыль и масштабируют бизнес',
+                  'Готовые frameworks, разбор реальных кейсов и рабочие инструменты',
+                ].map((p) => (
+                  <li key={p} className="flex items-start gap-3 text-sm text-foreground/90">
+                    <Icon name="Check" size={15} className="mt-0.5 text-primary shrink-0" />
+                    {p}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div>
+              <p className="text-sm font-mono-tech tracking-wider text-muted-foreground mb-4">ДОПОЛНИТЕЛЬНО ПРОВОЖУ:</p>
+              <div className="space-y-3">
+                {[
+                  { icon: 'Building2', text: 'Корпоративные тренинги и мастер-классы по стратегическому маркетингу' },
+                  { icon: 'UserCheck', text: 'Индивидуальное наставничество для CMO и CEO' },
+                  { icon: 'Layers', text: 'Воркшопы по построению маркетинговой функции, внедрению AI и data-driven подходов' },
+                ].map((item) => (
+                  <div key={item.text} className="flex items-start gap-3 rounded-xl border border-border bg-card p-4">
+                    <span className="flex size-9 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                      <Icon name={item.icon} size={17} />
+                    </span>
+                    <span className="text-sm text-foreground/90 leading-relaxed">{item.text}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="reveal">
+            <div className="relative rounded-3xl overflow-hidden border border-border shadow-2xl">
+              <img
+                src="https://cdn.poehali.dev/projects/bb8cdabf-7fb4-4d38-9a77-012855de8f33/bucket/c413a5aa-6030-46cb-a472-66c2794a3b3c.png"
+                alt="Авторские программы — Амир Ахмадьяров"
+                className="w-full h-[560px] object-cover object-top"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
+              <div className="absolute bottom-6 left-6 right-6">
+                <span className="inline-flex items-center gap-2 rounded-full bg-primary/90 text-primary-foreground text-sm font-semibold px-4 py-2">
+                  <Icon name="Mic" size={16} />
+                  Спикер и эксперт
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
