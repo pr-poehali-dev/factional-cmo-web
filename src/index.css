@@ -161,3 +161,117 @@
     background-position: 64px 64px;
   }
 }
+
+@keyframes orb-1 {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(18vw, 12vh) scale(1.1);
+  }
+  50% {
+    transform: translate(8vw, 28vh) scale(0.95);
+  }
+  75% {
+    transform: translate(-10vw, 15vh) scale(1.05);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@keyframes orb-2 {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(-14vw, 20vh) scale(1.08);
+  }
+  50% {
+    transform: translate(-6vw, -10vh) scale(0.92);
+  }
+  75% {
+    transform: translate(12vw, 8vh) scale(1.04);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@keyframes orb-3 {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(10vw, -18vh) scale(1.06);
+  }
+  66% {
+    transform: translate(-8vw, 10vh) scale(0.97);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+.ambient-orbs {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.ambient-orbs::before,
+.ambient-orbs::after,
+.ambient-orbs span {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.13;
+}
+
+.ambient-orbs::before {
+  width: 55vw;
+  height: 55vw;
+  background: radial-gradient(
+    circle,
+    hsl(224 100% 65%),
+    hsl(210 100% 50%) 60%,
+    transparent 80%
+  );
+  top: -10%;
+  left: 10%;
+  animation: orb-1 28s ease-in-out infinite;
+}
+
+.ambient-orbs::after {
+  width: 45vw;
+  height: 45vw;
+  background: radial-gradient(
+    circle,
+    hsl(220 100% 70%),
+    hsl(230 80% 55%) 60%,
+    transparent 80%
+  );
+  bottom: 5%;
+  right: 5%;
+  animation: orb-2 36s ease-in-out infinite;
+}
+
+.ambient-orbs span {
+  display: block;
+  width: 38vw;
+  height: 38vw;
+  background: radial-gradient(
+    circle,
+    hsl(215 100% 60%),
+    hsl(235 90% 65%) 60%,
+    transparent 80%
+  );
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: orb-3 22s ease-in-out infinite;
+  opacity: 0.09;
+}

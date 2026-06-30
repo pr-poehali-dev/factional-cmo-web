@@ -132,6 +132,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+      <div className="ambient-orbs" aria-hidden="true"><span /></div>
       {/* Header */}
       <header ref={headerRef} className="fixed top-0 inset-x-0 z-50 glass border-b border-border/60">
         <div className="max-w-[1600px] mx-auto px-5 md:px-10 h-16 md:h-20 flex items-center justify-between">
