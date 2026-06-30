@@ -499,44 +499,50 @@ const Index = () => {
           <div className="reveal">
             <p className="font-mono-tech text-xs tracking-[0.3em] text-primary mb-4">// КОНТАКТЫ</p>
             <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">
-              Построим вашу машину роста
+              Давайте обсудим наше сотрудничество
             </h2>
+            <p className="text-lg text-muted-foreground mb-3 max-w-lg">
+              Расскажите о задаче — отвечу Вам в течение 3 рабочих дней.
+            </p>
             <p className="text-lg text-muted-foreground mb-10 max-w-lg">
-              Расскажите о задаче — отвечу в течение дня. Готов к командировкам и работе с распределёнными командами.
+              Готов к работе в Москве, регионах и с распределёнными командами.
             </p>
             <div className="space-y-4">
               {[
-                { icon: 'Phone', label: 'Телефон', value: '+7 (900) 000-00-00' },
-                { icon: 'Mail', label: 'Email', value: 'hello@ahmadyarov.pro' },
-                { icon: 'Send', label: 'Telegram', value: '@ahmadyarov' },
-                { icon: 'MapPin', label: 'Локация', value: 'Москва · готов к командировкам' },
+                { icon: 'Phone', label: 'Телефон', value: '+7 (495) 663-94-17', href: 'tel:+74956639417' },
+                { icon: 'Mail', label: 'Email', value: 'hello@ahmadiarov.ru', href: 'mailto:hello@ahmadiarov.ru' },
+                { icon: 'Send', label: 'Telegram', value: '@nextyb', href: 'https://t.me/nextyb' },
+                { icon: 'MapPin', label: 'Локация', value: 'Москва — готов к командировкам', href: null },
               ].map((c) => (
                 <div key={c.label} className="flex items-center gap-4 rounded-xl border border-border bg-card p-4">
-                  <span className="flex size-11 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                  <span className="flex size-11 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
                     <Icon name={c.icon} size={20} />
                   </span>
                   <div>
                     <p className="text-xs text-muted-foreground font-mono-tech">{c.label}</p>
-                    <p className="font-medium">{c.value}</p>
+                    {c.href ? (
+                      <a href={c.href} target={c.href.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer" className="font-medium hover:text-primary transition-colors">
+                        {c.value}
+                      </a>
+                    ) : (
+                      <p className="font-medium">{c.value}</p>
+                    )}
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-          <form className="reveal rounded-3xl border border-border bg-card p-8 md:p-10" onSubmit={(e) => e.preventDefault()}>
-            <h3 className="text-2xl font-bold mb-6">Оставить заявку</h3>
-            <div className="space-y-4">
-              <input className="w-full rounded-xl border border-input bg-background px-4 py-3.5 text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none transition-colors" placeholder="Ваше имя" />
-              <input className="w-full rounded-xl border border-input bg-background px-4 py-3.5 text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none transition-colors" placeholder="Email или телефон" />
-              <input className="w-full rounded-xl border border-input bg-background px-4 py-3.5 text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none transition-colors" placeholder="Компания" />
-              <textarea rows={4} className="w-full rounded-xl border border-input bg-background px-4 py-3.5 text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none transition-colors resize-none" placeholder="Кратко о задаче" />
-              <Button type="submit" size="lg" className="w-full rounded-xl text-base py-6">
-                Отправить заявку
-                <Icon name="ArrowRight" size={18} className="ml-1" />
-              </Button>
+          <div className="reveal">
+            <div className="relative rounded-3xl overflow-hidden border border-border shadow-2xl">
+              <img
+                src="https://cdn.poehali.dev/projects/bb8cdabf-7fb4-4d38-9a77-012855de8f33/bucket/676ceca5-560a-4983-9848-09a76fa9e348.png"
+                alt="Амир Ахмадьяров — выступление"
+                className="w-full h-[560px] object-cover object-center"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
             </div>
-          </form>
+          </div>
         </div>
       </section>
 
