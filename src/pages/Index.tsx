@@ -3,7 +3,7 @@ import Icon from '@/components/ui/icon';
 import { Button } from '@/components/ui/button';
 
 const LOGO = 'https://cdn.poehali.dev/files/03922f62-7868-456b-97fb-5b78c2e4c6d2.png';
-const PHOTO_HERO = 'https://cdn.poehali.dev/projects/bb8cdabf-7fb4-4d38-9a77-012855de8f33/bucket/72bcf8d0-67f1-4457-bcee-a5426dc2f93d.png';
+const PHOTO_HERO = 'https://cdn.poehali.dev/projects/bb8cdabf-7fb4-4d38-9a77-012855de8f33/bucket/5e42648e-d2cf-4db5-8d20-b09a95d148bb.png';
 const PHOTO_ABOUT = 'https://cdn.poehali.dev/projects/bb8cdabf-7fb4-4d38-9a77-012855de8f33/bucket/dd81e020-5f18-4458-8c6c-c6bc4d79f13c.png';
 const PHOTO_STUDIO = 'https://cdn.poehali.dev/files/5be20489-321f-4f55-a7c2-cf7cf18a228e.png';
 const PHOTO_PORTRAIT = 'https://cdn.poehali.dev/files/2a773e3f-fb16-41f3-9b16-28838049ecc2.png';
@@ -199,9 +199,9 @@ const Index = () => {
 
           <div className="relative hidden lg:block animate-float-slow">
             <div className="absolute -inset-6 bg-primary/20 blur-3xl rounded-full" />
-            <div className="relative rounded-3xl overflow-hidden border border-border shadow-2xl bg-card flex items-end justify-center" style={{ minHeight: '640px' }}>
-              <img src={PHOTO_HERO} alt="Амир Ахмадьяров" className="w-full h-full object-contain object-bottom max-h-[680px]" style={{ display: 'block' }} />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent pointer-events-none" />
+            <div className="relative rounded-3xl overflow-hidden border border-border shadow-2xl" style={{ height: '660px' }}>
+              <img src={PHOTO_HERO} alt="Амир Ахмадьяров" className="w-full h-full object-cover object-top" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/50 via-transparent to-transparent pointer-events-none" />
             </div>
           </div>
         </div>
