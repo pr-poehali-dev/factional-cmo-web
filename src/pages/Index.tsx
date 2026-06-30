@@ -107,10 +107,30 @@ const skills = [
 ];
 
 const cases = [
-  { tag: 'Ребрендинг', title: 'Запуск бренда «СинтезМ»', desc: 'Полный ребрендинг, новое позиционирование и вывод на рынок.', img: PHOTO_PORTRAIT },
-  { tag: 'Трансформация', title: 'ФинТех: маркетинг с нуля', desc: 'Построение data-driven функции и предсказуемого роста.', img: PHOTO_ABOUT },
-  { tag: '+360%', title: 'Рост Seven A Studio', desc: 'Перестройка воронки и кратный рост прибыли агентства.', img: PHOTO_STUDIO },
-  { tag: 'Federal', title: 'Федеральные кампании', desc: 'Кампании для Sony, Gillette с охватом 20M+.', img: PHOTO_HERO },
+  {
+    tag: 'Federal',
+    title: 'Федеральные кампании',
+    desc: 'Для крупнейших мировых брендов с охватом 20М+.',
+    img: 'https://cdn.poehali.dev/projects/bb8cdabf-7fb4-4d38-9a77-012855de8f33/bucket/73427c02-9215-48fa-9351-6c4307b20920.png',
+  },
+  {
+    tag: '+360%',
+    title: 'Seven A Studio',
+    desc: 'От фриланс студии до крупнейшего маркетингового агентства.',
+    img: 'https://cdn.poehali.dev/projects/bb8cdabf-7fb4-4d38-9a77-012855de8f33/bucket/85bd1202-27d4-4813-a55c-74de9a8bf560.png',
+  },
+  {
+    tag: 'IT-продукт',
+    title: 'Операционная система «СинтезМ»',
+    desc: 'Упаковка и вывод на рынок высокотехнологичного IT продукта.',
+    img: 'https://cdn.poehali.dev/projects/bb8cdabf-7fb4-4d38-9a77-012855de8f33/bucket/7ddc3706-b5f7-44ec-b011-b9f439949086.png',
+  },
+  {
+    tag: 'Вирусный запуск',
+    title: 'Запуск игры «Лихие 90-е»',
+    desc: 'Культовая игра, которая покорила социальные сети.',
+    img: 'https://cdn.poehali.dev/projects/bb8cdabf-7fb4-4d38-9a77-012855de8f33/bucket/1445eecf-f406-4d03-ae5c-565b3a34c989.png',
+  },
 ];
 
 const services = [
