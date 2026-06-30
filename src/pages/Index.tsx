@@ -3,8 +3,8 @@ import Icon from '@/components/ui/icon';
 import { Button } from '@/components/ui/button';
 
 const LOGO = 'https://cdn.poehali.dev/files/03922f62-7868-456b-97fb-5b78c2e4c6d2.png';
-const PHOTO_HERO = 'https://cdn.poehali.dev/files/64129106-8803-4885-b06d-99a101092642.png';
-const PHOTO_ABOUT = 'https://cdn.poehali.dev/files/1d25dffb-4d89-4964-94de-a763c9243928.png';
+const PHOTO_HERO = 'https://cdn.poehali.dev/projects/bb8cdabf-7fb4-4d38-9a77-012855de8f33/bucket/72bcf8d0-67f1-4457-bcee-a5426dc2f93d.png';
+const PHOTO_ABOUT = 'https://cdn.poehali.dev/projects/bb8cdabf-7fb4-4d38-9a77-012855de8f33/bucket/dd81e020-5f18-4458-8c6c-c6bc4d79f13c.png';
 const PHOTO_STUDIO = 'https://cdn.poehali.dev/files/5be20489-321f-4f55-a7c2-cf7cf18a228e.png';
 const PHOTO_PORTRAIT = 'https://cdn.poehali.dev/files/2a773e3f-fb16-41f3-9b16-28838049ecc2.png';
 
@@ -48,33 +48,43 @@ const metrics = [
 
 const experience = [
   {
-    period: '2022 — н.в.',
-    role: 'Директор по маркетингу',
-    company: 'ФинТех / Notamedia / АО «С++»',
+    period: '2026 — н.в.',
+    role: 'CMO / Директор по маркетингу',
+    company: 'АО «С+»',
     points: [
-      'Data-driven трансформация маркетинговой функции с нуля',
-      'Запуск и go-to-market новых продуктов на рынок B2B/B2G',
-      'Построение системы аналитики и предсказуемого роста',
+      'Стратегический маркетинг и предсказуемый рост',
+      'Внедрение AI и автоматизации в маркетинг',
+      'Управление командой и маркетинговой функцией',
     ],
   },
   {
-    period: '2018 — 2022',
+    period: '2025 — 2026',
+    role: 'CMO / Директор по маркетингу',
+    company: 'Notamedia.Integrator',
+    points: [
+      'Запуск и go-to-market новых продуктов B2B/B2G',
+      'Построение системы сквозной аналитики',
+      'Перестройка позиционирования и воронки',
+    ],
+  },
+  {
+    period: '2020 — 2025',
+    role: 'CMO / Заместитель директора по развитию',
+    company: 'АО «ФИНТЕХ»',
+    points: [
+      'Data-driven трансформация маркетинговой функции',
+      'Вывод финтех-продуктов на рынок',
+      'Построение маркетинга и команды с нуля',
+    ],
+  },
+  {
+    period: '2009 — 2020',
     role: 'CMO / Партнёр',
     company: 'Seven A Studio',
     points: [
       'Рост прибыли агентства на 360% за счёт перестройки воронки',
       'Ребрендинг и позиционирование «СинтезМ»',
-      'Командостроительство: маркетинг, аналитика, продакшн',
-    ],
-  },
-  {
-    period: '2009 — 2018',
-    role: 'Руководитель направлений',
-    company: 'Федеральные бренды и IT-стартапы',
-    points: [
       'Федеральные кампании: Sony, Gillette и др.',
-      'Запуск IT-стартапов и продуктовых линеек',
-      'Стратегия, медиапланирование, performance',
     ],
   },
 ];
