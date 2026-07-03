@@ -173,7 +173,7 @@ const Index = () => {
               </button>
             ))}
           </nav>
-          <Button onClick={() => scrollTo('contact')} className="rounded-full font-medium">
+          <Button onClick={() => scrollTo('contact')} className="rounded-full font-medium btn-gradient border-0 text-white">
             Обсудить
             <Icon name="ArrowRight" size={16} className="ml-1" />
           </Button>
@@ -212,11 +212,11 @@ const Index = () => {
             </div>
 
             <div className="flex flex-wrap gap-4">
-              <Button onClick={() => scrollTo('contact')} size="lg" className="rounded-full text-base h-13 px-8 py-6">
+              <Button onClick={() => scrollTo('contact')} size="lg" className="rounded-full text-base h-13 px-8 py-6 btn-gradient border-0 text-white">
                 Обсудить сотрудничество
                 <Icon name="ArrowRight" size={18} className="ml-1" />
               </Button>
-              <Button onClick={() => scrollTo('results')} size="lg" variant="outline" className="rounded-full text-base px-8 py-6 border-border">
+              <Button onClick={() => scrollTo('results')} size="lg" variant="outline" className="rounded-full text-base h-13 px-8 py-6 border-border">
                 Смотреть результаты
               </Button>
             </div>
@@ -374,7 +374,9 @@ const Index = () => {
         <div className="relative max-w-4xl mx-auto px-5 md:px-10 text-center reveal">
           <Icon name="Quote" size={48} className="mx-auto text-primary/40 mb-8" />
           <blockquote className="text-2xl md:text-4xl font-bold leading-snug tracking-tight">
-            «Маркетинг, который приносит реальную прибыль,<br className="hidden md:block" /> а&nbsp;не только красивые отчёты.»
+            «Маркетинг, который приносит<br />
+            реальную прибыль,<br />
+            а&nbsp;не только красивые отчёты.»
           </blockquote>
           <p className="mt-8 font-mono-tech text-sm tracking-[0.25em] text-muted-foreground">ПРИНЦИП БРЕНДА</p>
         </div>
