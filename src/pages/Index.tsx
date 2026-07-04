@@ -448,7 +448,7 @@ const Index = () => {
               <img
                 src="https://cdn.poehali.dev/projects/bb8cdabf-7fb4-4d38-9a77-012855de8f33/bucket/c413a5aa-6030-46cb-a472-66c2794a3b3c.png"
                 alt="Авторские программы — Амир Ахмадьяров"
-                className="w-full h-[560px] object-cover object-top"
+                className="w-full h-[560px] object-cover object-left md:object-top"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">
@@ -569,7 +569,7 @@ const Index = () => {
               <img
                 src="https://cdn.poehali.dev/projects/bb8cdabf-7fb4-4d38-9a77-012855de8f33/bucket/676ceca5-560a-4983-9848-09a76fa9e348.png"
                 alt="Амир Ахмадьяров — выступление"
-                className="w-full h-[560px] object-cover object-center"
+                className="w-full h-[560px] object-cover object-left md:object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
             </div>
