@@ -187,6 +187,14 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background" />
 
         <div className="relative max-w-[1600px] mx-auto px-5 md:px-10 grid lg:grid-cols-[1.3fr_1fr] gap-12 items-center w-full">
+          <div className="lg:hidden relative mb-8 animate-fade-in">
+            <div className="absolute -inset-4 bg-primary/20 blur-3xl rounded-full" />
+            <div className="relative rounded-3xl overflow-hidden border border-border shadow-2xl" style={{ height: '380px' }}>
+              <img src={PHOTO_HERO} alt="Амир Ахмадьяров" className="w-full h-full object-cover object-top" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent pointer-events-none" />
+            </div>
+          </div>
+
           <div className="animate-fade-in">
             <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 mb-7">
               <span className="size-2 rounded-full bg-primary animate-pulse" />
