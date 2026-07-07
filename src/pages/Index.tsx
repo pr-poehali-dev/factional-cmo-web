@@ -50,7 +50,7 @@ const experience = [
   {
     period: '2026 — н.в.',
     role: 'CMO / Директор по маркетингу',
-    company: 'АО «C++»',
+    company: 'АО «С+»',
     url: 'https://softplus.systems/',
     points: [
       'Стратегическая ответственность за маркетинг и рост компании',
@@ -73,7 +73,7 @@ const experience = [
   },
   {
     period: '2020 — 2025',
-    role: 'Директор по маркетингу',
+    role: 'CMO / Зам. директора по развитию бизнеса',
     company: 'АО «ФИНТЕХ»',
     url: 'https://www.fintech.ru/',
     points: [
